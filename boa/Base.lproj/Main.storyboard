@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,164 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="boa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choose your avatar :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q82-gF-5g2">
+                                <rect key="frame" x="29.5" y="62" width="355" height="40.5"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.1279766604" green="0.056845080419999999" blue="0.23253138379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACb-gL-0Az">
+                                <rect key="frame" x="0.0" y="121" width="414" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="2bl-NU-C7X"/>
+                                    <constraint firstAttribute="width" constant="414" id="Q0L-if-hUx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="kqb-ii-0aJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ada Lovelace">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="38"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.89780706170000002" green="0.63869857789999995" blue="0.86276680230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAB-7W-JFQ">
+                                <rect key="frame" x="-444" y="292" width="1302" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1302" id="EaA-AK-XtD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="GfR-l6-9PU"/>
+                                    <constraint firstAttribute="height" constant="172" id="rIn-3t-h3r"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="                                                         Tu YouYou                                                         ">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="38"/>
+                                    <color key="baseForegroundColor" red="0.89780706170000002" green="0.63869857789999995" blue="0.86276680230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.81539261340000002" green="0.94767028090000005" blue="0.76860195399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL7-HT-tNQ">
+                                <rect key="frame" x="0.0" y="462" width="414" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="48v-pV-yAt"/>
+                                    <constraint firstAttribute="width" constant="414" id="PDh-hg-qdX"/>
+                                    <constraint firstAttribute="height" constant="172" id="ShY-wW-Jow"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Katherine Johnson">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="38"/>
+                                    <color key="baseForegroundColor" red="0.69993782039999997" green="0.79742556809999998" blue="0.9333514571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.97607392069999999" green="0.92173129320000002" blue="0.91372340919999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWJ-aY-j2d">
+                                <rect key="frame" x="0.0" y="801" width="414" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="95" id="9vL-KK-ips"/>
+                                    <constraint firstAttribute="height" constant="95" id="Idg-tq-9dq"/>
+                                    <constraint firstAttribute="width" constant="414" id="Tdc-F2-egy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="play!">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="0.1279766604" green="0.056845080419999999" blue="0.23253138379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="VI2-sV-ayp" kind="show" id="cvE-3K-4o9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKU-Nc-SU7">
+                                <rect key="frame" x="0.0" y="633" width="414" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="Ube-YW-4HO"/>
+                                    <constraint firstAttribute="width" constant="414" id="Ylc-Aw-Tm9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="aOo-GN-VxB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Mae Jemison">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="38"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.70381993060000003" green="0.79742723699999996" blue="0.93335139749999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99195402860000004" green="0.96080118420000005" blue="0.96078377960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.98467985270000002" green="0.70099045439999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TWJ-aY-j2d" firstAttribute="leading" secondItem="eKU-Nc-SU7" secondAttribute="leading" id="3MA-4g-19o"/>
+                            <constraint firstItem="Q82-gF-5g2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="5cr-f3-ikx"/>
+                            <constraint firstItem="Q82-gF-5g2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9oy-Ju-ESi"/>
+                            <constraint firstItem="WAB-7W-JFQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="292" id="GtO-JT-TrI"/>
+                            <constraint firstItem="ACb-gL-0Az" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jbs-jr-90X"/>
+                            <constraint firstItem="ACb-gL-0Az" firstAttribute="top" secondItem="Q82-gF-5g2" secondAttribute="bottom" constant="18.5" id="MR3-bD-GAo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kL7-HT-tNQ" secondAttribute="bottom" constant="228" id="Nnk-G6-UI4"/>
+                            <constraint firstItem="ACb-gL-0Az" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PAK-Wg-JMF"/>
+                            <constraint firstItem="eKU-Nc-SU7" firstAttribute="top" secondItem="WAB-7W-JFQ" secondAttribute="bottom" constant="169" id="QEf-ks-kV6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TWJ-aY-j2d" secondAttribute="bottom" constant="-34" id="STj-m2-dvh"/>
+                            <constraint firstItem="WAB-7W-JFQ" firstAttribute="top" secondItem="Q82-gF-5g2" secondAttribute="bottom" constant="189.5" id="UJq-8p-Jdo"/>
+                            <constraint firstItem="WAB-7W-JFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UXd-fG-Z4G"/>
+                            <constraint firstItem="WAB-7W-JFQ" firstAttribute="centerX" secondItem="eKU-Nc-SU7" secondAttribute="centerX" id="bEk-sv-tM4"/>
+                            <constraint firstItem="WAB-7W-JFQ" firstAttribute="centerX" secondItem="kL7-HT-tNQ" secondAttribute="centerX" id="bPh-5F-T55"/>
+                            <constraint firstItem="kL7-HT-tNQ" firstAttribute="top" secondItem="ACb-gL-0Az" secondAttribute="bottom" constant="169" id="cCY-Hm-JEC"/>
+                            <constraint firstItem="kL7-HT-tNQ" firstAttribute="leading" secondItem="ACb-gL-0Az" secondAttribute="leading" id="geX-nn-3yL"/>
+                            <constraint firstItem="kL7-HT-tNQ" firstAttribute="leading" secondItem="eKU-Nc-SU7" secondAttribute="leading" id="lrp-FM-Xuz"/>
+                            <constraint firstItem="TWJ-aY-j2d" firstAttribute="trailing" secondItem="eKU-Nc-SU7" secondAttribute="trailing" id="oFU-TO-hTT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eKU-Nc-SU7" secondAttribute="bottom" constant="57" id="ssA-W6-QHL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="s2b-m2-4Tz"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ebp-rE-AaL">
+            <objects>
+                <viewController id="VI2-sV-ayp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qC-TX-izb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="glN-uH-Z2l">
+                                <rect key="frame" x="20" y="20.5" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.11629195420000001" green="0.051654930420000002" blue="0.2113004742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WD-01-pFQ">
+                                <rect key="frame" x="347" y="15" width="47" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="x">
+                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                    <color key="baseForegroundColor" red="0.1279766604" green="0.056845080419999999" blue="0.23253138379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="TM6-Lm-XLb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xhb-wb-bSf"/>
+                        <color key="backgroundColor" red="0.81539261340000002" green="0.94767028090000005" blue="0.76860195399999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tgz-ek-Icb"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGO-nn-Rjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782.60869565217399" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.89780706170000002" green="0.63869857789999995" blue="0.86276680230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
